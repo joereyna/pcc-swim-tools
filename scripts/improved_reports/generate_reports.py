@@ -1,5 +1,38 @@
 #!/usr/bin/env python
 
+'''
+REQUIREMENTS:
+Generate a Top Times Report of the Improvements for all boys and girls of all ages.  Only use times 'After Since Date' 
+of the first swim meet.  Rather than saving the report as a PDF, this time save it as a CSV file.  Set Delimeter 
+to empty/blank and Separator to ','.  Name the csv file as boys-girls-all-improved.csv and save it to the same 
+directory as this script and run it like the example shows below.
+
+EXAMPLE:
+$ python generate_reports.py
+07/07/2022 11:08:12AM INFO: There are 449 records found.
+07/07/2022 11:08:12AM INFO: Here are the winners!
+[('0-6',
+  {'Boy': {'age': '4', 'name': 'Harrison Marcus', 'percentage': 38.21},
+   'Girl': {'age': '4', 'name': 'Kennedy Willse', 'percentage': 42.43}}),
+ ('11-12',
+  {'Boy': {'age': '11', 'name': 'Blake Schader', 'percentage': 12.22},
+   'Girl': {'age': '11', 'name': 'Taylor Yeats', 'percentage': 6.73}}),
+ ('13-14',
+  {'Boy': {'age': '13', 'name': 'Connor Yeats', 'percentage': 5.38},
+   'Girl': {'age': '13', 'name': 'Courtney White', 'percentage': 6.97}}),
+ ('15-18',
+  {'Boy': {'age': '15', 'name': 'Sean Gwin', 'percentage': 3.31},
+   'Girl': {'age': '18', 'name': 'Megan Campagna', 'percentage': 8.03}}),
+ ('7-8',
+  {'Boy': {'age': '7', 'name': 'Juyoung Park', 'percentage': 26.9},
+   'Girl': {'age': '7', 'name': 'Ajuni Mann', 'percentage': 14.44}}),
+ ('9-10',
+  {'Boy': {'age': '9', 'name': 'Jeremy Salmon', 'percentage': 12.02},
+   'Girl': {'age': '10', 'name': 'Sahaani Mann', 'percentage': 12.84}})]
+
+
+'''
+
 import pprint
 import logging
 
